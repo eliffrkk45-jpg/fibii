@@ -1,0 +1,12 @@
+/* Nasse Arcade */
+.arc{max-width:760px;margin:0 auto}
+.arc-bar{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:8px 14px;margin-bottom:8px;border-radius:14px;background:rgba(10,20,40,.7);border:1px solid rgba(120,160,255,.25);font-weight:800}
+.arc-bar .a-s{font-size:1.15rem;color:#ffd34d}.arc-bar .a-m{font-size:.9rem;opacity:.9;flex:1;text-align:center}.arc-bar .a-l{letter-spacing:2px}
+.arc-mute{background:none;border:0;font-size:1.2rem;cursor:pointer;color:inherit}
+.arc-stage{position:relative;border-radius:18px;overflow:hidden;border:2px solid rgba(120,160,255,.35);box-shadow:0 10px 40px rgba(0,0,0,.45);background:#000;line-height:0}
+.arc-stage canvas{width:100%;aspect-ratio:720/432;display:block;cursor:crosshair;touch-action:none;user-select:none;-webkit-user-select:none}
+.arc-ov{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:18px;line-height:1.4;background:rgba(5,10,28,.84);backdrop-filter:blur(3px);color:#fff}
+.arc-ov h2{margin:4px 0;font-size:1.7rem}.arc-ov p{max-width:520px;margin:2px 0}.arc-ov .arc-best{opacity:.85;font-size:.9rem}
+.arc-ov .btn{margin-top:10px;animation:arcpulse 1.4s infinite}
+@keyframes arcpulse{50%{transform:scale(1.06)}}
+.arc-help{margin-top:10px;font-size:.88rem;opacity:.85;text-align:center}
